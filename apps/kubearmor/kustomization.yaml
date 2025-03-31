@@ -1,0 +1,10 @@
+# apps/kubearmor/kustomization.yaml
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: kubearmor-system
+
+resources:
+  - namespace.yaml
+  - https://raw.githubusercontent.com/kubearmor/KubeArmor/main/deployments/helm/kubearmor/templates/kubearmor.yaml

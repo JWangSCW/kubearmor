@@ -1,0 +1,15 @@
+# apps/security-policies/deny-curl.yaml
+
+apiVersion: security.kubearmor.com/v1
+kind: KubeArmorPolicy
+metadata:
+  name: deny-curl
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: demo-app
+  process:
+    matchPaths:
+      - path: /usr/bin/curl
+  action: Block
