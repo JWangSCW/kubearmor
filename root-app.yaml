@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://gitlab.infra.online.net/solution-architect/kubearmor.git
+    repoURL: https://github.com/JWangSCW/kubearmor.git
     targetRevision: HEAD
     path: apps
     directory:
